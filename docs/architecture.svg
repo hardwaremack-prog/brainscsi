@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" font-family="Helvetica, Arial, sans-serif">
+  <rect width="860" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker>
+  </defs>
+  <!-- Mac SE -->
+  <rect x="30" y="40" width="250" height="320" rx="14" fill="#f3efe4" stroke="#333" stroke-width="2"/>
+  <text x="155" y="70" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">Mac SE</text>
+  <text x="155" y="90" text-anchor="middle" font-size="13" fill="#555">the terminal (8 MHz 68000)</text>
+  <rect x="70" y="105" width="170" height="114" fill="#fff" stroke="#333" stroke-width="2"/>
+  <text x="155" y="155" text-anchor="middle" font-size="13" fill="#222">512 × 342 screen</text>
+  <text x="155" y="173" text-anchor="middle" font-size="12" fill="#555">UnpackBits → screen RAM</text>
+  <text x="55" y="250" font-size="13" fill="#222">⌨ Keyboard — GetKeys()</text>
+  <text x="55" y="272" font-size="13" fill="#222">🖱 Mouse — GetMouse()</text>
+  <text x="55" y="294" font-size="13" fill="#555">💾 Floppy — later</text>
+  <text x="55" y="316" font-size="13" fill="#555">🔈 Speaker — later</text>
+  <text x="55" y="344" font-size="12" fill="#777">BrainSCSI client app</text>
+  <!-- cable -->
+  <line x1="282" y1="160" x2="560" y2="160" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <text x="421" y="148" text-anchor="middle" font-size="13" fill="#222">SEND: keys, mouse, ACK</text>
+  <line x1="560" y1="230" x2="282" y2="230" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+  <text x="421" y="252" text-anchor="middle" font-size="13" fill="#222">RECEIVE: changed screen rectangles</text>
+  <rect x="345" y="182" width="152" height="28" rx="6" fill="#222"/>
+  <text x="421" y="201" text-anchor="middle" font-size="13" fill="#fff">DB-25 SCSI cable</text>
+  <!-- Pi -->
+  <rect x="562" y="40" width="268" height="320" rx="14" fill="#e6f2e6" stroke="#333" stroke-width="2"/>
+  <text x="696" y="70" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">Raspberry Pi</text>
+  <text x="696" y="90" text-anchor="middle" font-size="13" fill="#555">the brain</text>
+  <rect x="582" y="105" width="228" height="40" rx="6" fill="#fff" stroke="#333"/>
+  <text x="696" y="130" text-anchor="middle" font-size="13" fill="#222">PiSCSI board (SCSI ID 5)</text>
+  <rect x="582" y="155" width="228" height="80" rx="6" fill="#fff" stroke="#333"/>
+  <text x="696" y="177" text-anchor="middle" font-size="13" font-weight="bold" fill="#222">BrainSCSI server</text>
+  <text x="696" y="196" text-anchor="middle" font-size="12" fill="#444">grab → dither to 1-bit → diff</text>
+  <text x="696" y="213" text-anchor="middle" font-size="12" fill="#444">32×32 tiles → PackBits</text>
+  <text x="696" y="228" text-anchor="middle" font-size="12" fill="#444">xdotool replays input</text>
+  <rect x="582" y="245" width="228" height="60" rx="6" fill="#fff" stroke="#333"/>
+  <text x="696" y="268" text-anchor="middle" font-size="13" fill="#222">Desktop at 512 × 342</text>
+  <text x="696" y="287" text-anchor="middle" font-size="12" fill="#444">Linux apps, or Basilisk II / System 7</text>
+  <text x="696" y="340" text-anchor="middle" font-size="12" fill="#777">all the thinking happens here</text>
+</svg>

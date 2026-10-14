@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+mac/build/
+se_screen.png
